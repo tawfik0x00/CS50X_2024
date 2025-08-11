@@ -13,7 +13,7 @@ int main(void)
     }
     while (min < 1);
 
-    // get the max to end
+    // get the max to end if max less than or equal to min reprompt
     int max;
     do
     {
@@ -21,7 +21,7 @@ int main(void)
     }
     while (min >= max);
 
-
+    // start check number from min to max if prime print
     for (int i = min; i <= max; i++)
     {
         if (prime(i))
@@ -37,7 +37,7 @@ bool prime(int number)
     {
         return false;
     }
-    
+
     for (int factor = 2; factor < number; factor++)
     {
         // if we find any number give remainder of 0 mean this number divisble by number

@@ -10,16 +10,10 @@ int main(void)
     int height = get_height("Height: ");
 
     // start print the pyramid
-    for (int row = 1; row <= height; row++)
+    for (int i = 1; i <= height; i++)
     {
         // print every row in the pyramid
-        // height - i = spaces
-        // i number of hashes per line
-
-        int spaces = height - row;
-        int bricks = row; // number of bricks equal the row number
-
-        print_row(spaces, bricks);
+        print_row(height - i, i);
     }
 }
 int get_height(string prompt)
@@ -31,7 +25,6 @@ int get_height(string prompt)
         n = get_int("%s", prompt);
     }
     while (n < 1);
-    
     // return the value
     return n;
 }
@@ -42,13 +35,11 @@ void print_row(int spaces, int bricks)
     {
         printf(" ");
     }
-
     // print the bricks
     for (int i = 0; i < bricks; i++)
     {
         printf("#");
     }
-
     // take a new line
     printf("\n");
 }

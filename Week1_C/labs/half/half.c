@@ -20,7 +20,7 @@ float half(float bill, float tax, int tip)
 {
     // convert percent to decimal, after search divide by 100
     tax = tax / 100.0;
-    float tipf = (float)tip / 100.0;
+    float tipf = (float) tip / 100.0;
 
     // add tax to bill
     bill = (bill * tax) + bill;

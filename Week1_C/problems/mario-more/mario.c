@@ -33,22 +33,18 @@ void print_row(int spaces, int bricks)
     {
         printf(" ");
     }
-
     // print the bricks of first pyramid
     for (int i = 0; i < bricks; i++)
     {
         printf("#");
     }
-
     // print the spaces between the two pyrmaids
     printf("  ");
-
     // print the bricks of the second pyramid
     for (int i = 0; i < bricks; i++)
     {
         printf("#");
     }
-    
     // take new line
     printf("\n");
 }
