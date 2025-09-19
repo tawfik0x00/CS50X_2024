@@ -6,3 +6,6 @@
 >I am just learn how to markdown
 
 ## Learn basics
+
+>[!Note]
+>make some padges
